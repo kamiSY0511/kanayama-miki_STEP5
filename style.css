@@ -1,0 +1,59 @@
+/* ページ全体の基本設定 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+/* 課題の見本に近い幅・余白にする */
+.app {
+    max-width: 360px;
+    padding: 40px 24px;
+}
+
+/* 入力欄とボタンを横に並べる */
+.inputArea {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 18px;
+}
+
+/* 画面が狭いときも入力欄を収める */
+#textInput {
+    min-width: 0;
+    flex: 1;
+}
+
+/* 文字を表示する場所 */
+.textDisplay {
+    box-sizing: border-box;
+    min-height: 30px;
+    margin-top: 16px;
+    padding: 5px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* 設問3：文字の背景を黄色にする */
+.highlight {
+    background-color: yellow;
+}
+
+/* 行数表示の余白 */
+#rowCount {
+    margin-top: 18px;
+}
+
+/* テーブルの枠線 */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 3px 5px;
+    text-align: left;
+}
